@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Learning Companion</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app">
       <canvas id="c"></canvas>
     </div>
+
+    <div class="controls">
+      <input type="text" id="text-input" placeholder="Ask me anything..." />
+      <button id="speak-button">Speak</button>
+    </div>
+
+    <div class="voice-select-wrapper">
+        <label for="voice-select">Choose a voice:</label>
+        <select id="voice-select"></select>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
